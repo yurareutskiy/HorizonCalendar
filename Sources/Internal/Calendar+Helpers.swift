@@ -72,9 +72,9 @@ extension Calendar {
 
 // MARK: Day Helpers
 
-extension Calendar {
+public extension Calendar {
 
-  func day(containing date: Date) -> Day {
+  public func day(containing date: Date) -> Day {
     let month = Month(
       era: component(.era, from: date),
       year: component(.year, from: date),
